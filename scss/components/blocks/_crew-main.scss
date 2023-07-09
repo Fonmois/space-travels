@@ -1,16 +1,16 @@
 #crew {
-    background-image: url(../../img/mobile/background/mobile-crew.jpg);
+    background-image: url(../img/mobile/background/mobile-crew.jpg);
 }
 
 @media (min-width:35em) and (max-width: 64em) {
     #crew {
-        background-image: url(../../img/tablet/background/tablet-crew.jpg);
+        background-image: url(../img/tablet/background/tablet-crew.jpg);
     }
 }
 
 @media (min-width:64em) {
     #crew {
-        background-image: url(../../img/desktop/background/desktop-crew.png);
+        background-image: url(../img/desktop/background/desktop-crew.png);
     }
 }
 
@@ -121,7 +121,7 @@
     position: relative;
     height: 177px;
     width: 177px;
-    background-image: url(../../img/mobile/crew/douglas.png);
+    background-image: url(../img/mobile/crew/douglas.png);
     background-repeat: no-repeat;
     max-width: 100%;
 
@@ -145,7 +145,7 @@
         & {
             height: 502px;
             width: 456px;
-            background-image: url(../../img/tablet/crew/douglas.png);
+            background-image: url(../img/tablet/crew/douglas.png);
         }
     }
 
@@ -154,7 +154,7 @@
 
             height: 702px;
             width: 568px;
-            background-image: url(../../img/desktop/crew/douglas.png);
+            background-image: url(../img/desktop/crew/douglas.png);
         }
     }
     @media (min-width: $xl) {
@@ -165,34 +165,34 @@
 
 .douglas {
 
-    background-image: url(../../img/mobile/crew/douglas.png);
+    background-image: url(../img/mobile/crew/douglas.png);
     
     @media (min-width: $md) {
         & {
-            background-image: url(../../img/tablet/crew/douglas.png);
+            background-image: url(../img/tablet/crew/douglas.png);
         }
     }
 
     @media (min-width: $lg) {
         & { 
             margin-top: -48px;
-            background-image: url(../../img/desktop/crew/douglas.png);
+            background-image: url(../img/desktop/crew/douglas.png);
         }
     }
 }
 
 .mark {
-    background-image: url(../../img/mobile/crew/mark.png);
+    background-image: url(../img/mobile/crew/mark.png);
     
     @media (min-width: $md) {
         & {
-            background-image: url(../../img/tablet/crew/mark.png);
+            background-image: url(../img/tablet/crew/mark.png);
         }
     }
 
     @media (min-width: $lg) {
         & {
-            background-image: url(../../img/desktop/crew/mark.png);
+            background-image: url(../img/desktop/crew/mark.png);
             min-height: 654px !important;
             height: 100%;
         }
@@ -200,17 +200,17 @@
 }
 
 .victor {
-    background-image: url(../../img/mobile/crew/victor.png);
+    background-image: url(../img/mobile/crew/victor.png);
     
     @media (min-width: $md) {
         & {
-            background-image: url(../../img/tablet/crew/victor.png);
+            background-image: url(../img/tablet/crew/victor.png);
         }
     }
 
     @media (min-width: $lg) {
         & {
-            background-image: url(../../img/desktop/crew/victor.png);
+            background-image: url(../img/desktop/crew/victor.png);
             min-height: 654px !important;
             height: 100%;
         }
@@ -218,19 +218,19 @@
 }
 
 .anousheh {
-    background-image: url(../../img/mobile/crew/anousheh.png);
+    background-image: url(../img/mobile/crew/anousheh.png);
     width: 210px;
 
     @media (min-width: $md) {
         & {
-            background-image: url(../../img/tablet/crew/anousheh.png);
+            background-image: url(../img/tablet/crew/anousheh.png);
         }
         width: 510px;
     }
 
     @media (min-width: $lg) {
         & {
-            background-image: url(../../img/desktop/crew/anousheh.png);         
+            background-image: url(../img/desktop/crew/anousheh.png);         
                min-height: 607px !important;
                height: 100%;
                width: 615px;

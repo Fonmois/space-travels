@@ -1,18 +1,18 @@
 //background 
 #home {
 
-    background-image: url(../../img/mobile/background/mobile-home.jpg);
+    background-image: url(../img/mobile/background/mobile-home.jpg);
 }
 
 @media (min-width:35em) and (max-width: 64em) {
     #home {
-        background-image: url(../../img/tablet/background/tablet-home.jpg);
+        background-image: url(../img/tablet/background/tablet-home.jpg);
     }
 }
 
 @media (min-width:64em) {
     #home {
-        background-image: url(../../img/desktop/background/desktop-home.png);
+        background-image: url(../img/desktop/background/desktop-home.png);
     }
 }
 

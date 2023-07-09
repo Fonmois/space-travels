@@ -2,20 +2,20 @@
 
 /* Временный bg */
 #destination {
-    background-image: url(../../img/mobile/background/Mobile-Destination.png);
+    background-image: url(../img/mobile/background/Mobile-Destination.png);
     // background-size: cover;
 }
 
 /* body смена фона */
 @media (min-width:35em) and (max-width: 64em) {
     #destination {
-        background-image: url(../../img/tablet/background/Tablet-Destination.png);
+        background-image: url(../img/tablet/background/Tablet-Destination.png);
     }
 }
 
 @media (min-width:64em) {
     #destination {
-        background-image: url(../../img/desktop/background/Desktop-Destination.png);
+        background-image: url(../img/desktop/background/Desktop-Destination.png);
     }
 }
 

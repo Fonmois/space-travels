@@ -1,16 +1,16 @@
 #technology {
-    background-image: url(../../img/mobile/background/mobile-technology.jpg);
+    background-image: url(../img/mobile/background/mobile-technology.jpg);
 }
 
 @media (min-width:35em) and (max-width: 64em) {
     #technology {
-        background-image: url(../../img/tablet/background/tablet-technology.jpg);
+        background-image: url(../img/tablet/background/tablet-technology.jpg);
     }
 }
 
 @media (min-width:64em) {
     #technology {
-        background-image: url(../../img/desktop/background/desktop-technology.png);
+        background-image: url(../img/desktop/background/desktop-technology.png);
     }
 }
 
@@ -119,15 +119,15 @@
 }
 
 .venhicle {
-    background-image: url(../../img/mobile/technology/venhicle.jpg);
+    background-image: url(../img/mobile/technology/venhicle.jpg);
 }
 
 .spaceport {
-    background-image: url(../../img/mobile/technology/spaceport.jpg);
+    background-image: url(../img/mobile/technology/spaceport.jpg);
 }
 
 .capsule {
-    background-image: url(../../img/mobile/technology/capsule.jpg);
+    background-image: url(../img/mobile/technology/capsule.jpg);
 }
 
 @media (min-width: $md) {
@@ -137,15 +137,15 @@
     }
 
     .venhicle {
-        background-image: url(../../img/tablet/technology/venhicle.jpg);
+        background-image: url(../img/tablet/technology/venhicle.jpg);
     }
 
     .spaceport {
-        background-image: url(../../img/tablet/technology/spaceport.jpg);
+        background-image: url(../img/tablet/technology/spaceport.jpg);
     }
 
     .capsule {
-        background-image: url(../../img/tablet/technology/capsule.jpg);
+        background-image: url(../img/tablet/technology/capsule.jpg);
     }
 }
 
@@ -159,15 +159,15 @@
     }
 
     .venhicle {
-        background-image: url(../../img/desktop/technology/venhicle.jpg);
+        background-image: url(../img/desktop/technology/venhicle.jpg);
     }
 
     .spaceport {
-        background-image: url(../../img/desktop/technology/spaceport.jpg);
+        background-image: url(../img/desktop/technology/spaceport.jpg);
     }
 
     .capsule {
-        background-image: url(../../img/desktop/technology/capsule.jpg);
+        background-image: url(../img/desktop/technology/capsule.jpg);
     }
 }
 
