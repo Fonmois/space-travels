@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Document</title>
+    <script src="./js/nav.js" defer></script>
+</head>
+
+<body id="destination">
+    <div class="contaier">
+        <header class="primary-header flex">
+
+            <div class="logo-header">
+                <!-- ./assets/shared/logo.svg -->
+                <!-- <img class="logo-img" src="./img/Logo.svg" alt="logo"> -->
+            </div>
+            <div class="line-header"></div>
+
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span
+                    class="sr-only"></span>
+            </button>
+
+            <nav>
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                    <li class="hover">
+                        <a class="uppercase text-white nav-text" href="index.html">
+                            <span aria-hidden="true">00</span>Home
+                        </a>
+                    <li class="active">
+                        <a class="ff-sans-cond uppercase text-white nav-text" href="destination.html">
+                            <span aria-hidden="true">01</span>Destination
+                        </a>
+                    <li class="hover">
+                        <a class="ff-sans-cond uppercase text-white nav-text" href="crew.html">
+                            <span aria-hidden="true">02</span>Crew
+                        </a>
+                    <li class="hover">
+                        <a class="ff-sans-cond uppercase text-white nav-text" href="technology.html">
+                            <span aria-hidden="true">03</span>Technology
+                        </a>
+                </ul>
+            </nav>
+    </div>
+    </header>
+    <main>
+        <div class="container">
+            <h5 class="h5 text-white dest__h5"><span>01</span>Pick your destination</h5>
+            <div class="destination">
+                <div class="planet moon image" id="Moon"></div>
+                <div class="planet mars image" id="Mars" style="display:none"></div>
+                <div class="planet europa image" id="Europa" style="display:none"></div>
+                <div class="planet titan image" id="Titan" style="display:none"></div>
+                <div class="destination-info">
+                    <ul class="destination-navigation">
+                       <li><a class="uppercase text-lightblue nav-text dest__underline" autofocus="autofocus"
+                            onclick="openImage('Moon'),openTab('tab1')" href="#1">MOON</a></li>
+                       <li><a class="uppercase text-lightblue nav-text dest__underline"
+                            onclick="openImage('Mars'),openTab('tab2')" href="#2">MARS</a></li>
+                       <li><a class="uppercase text-lightblue nav-text dest__underline"
+                            onclick="openImage('Europa'),openTab('tab3')" href="#3">EUROPA</a></li>
+                       <li><a class="uppercase text-lightblue nav-text dest__underline"
+                            onclick="openImage('Titan'),openTab('tab4')" href="#4">TITAN</a></li>
+                    </ul>
+                    <div class="tabs" id="tab1">
+                        <h2 class="h2 text-white">MOON</h2>
+                        <p class="text text-lightblue planet-text">
+                            See our planet as you’ve never seen it before. A perfect relaxing
+                            trip away to help regain perspective and come back refreshed. While you’re there, take in
+                            some
+                            history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                        <div class="destination__line"></div>
+                        <div class="destination-values">
+                            <div class="values-distance">
+                                <div class="subheading-1 text-lightblue">AVG. DISTANCE</div>
+                                <div class="subheading-2 text-white">384,400 km</div>
+                            </div>
+                            <div class="values-time">
+                                <div class="subheading-1 text-lightblue">Est. travel time</div>
+                                <div class="subheading-2 text-white">3 days</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab2" class="tabs" style="display:none">
+                        <h2 class="h2 text-white">MARS</h2>
+                        <p class="text text-lightblue planet-text">
+                            Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest
+                            planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+                        <div class="destination__line"></div>
+                        <div class="destination-values">
+                            <div class="values-distance">
+                                <div class="subheading-1 text-lightblue">AVG. DISTANCE</div>
+                                <div class="subheading-2 text-white">225 MIL. km</div>
+                            </div>
+                            <div class="values-time">
+                                <div class="subheading-1 text-lightblue">Est. travel time</div>
+                                <div class="subheading-2 text-white">9 months</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab3" class="tabs" style="display:none">
+                        <h2 class="h2 text-white">EUROPA</h2>
+                        <p class="text text-lightblue planet-text">
+                            The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream.
+                            With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple
+                            relaxation in your snug wintery cabin.</p>
+                        <div class="destination__line"></div>
+                        <div class="destination-values">
+                            <div class="values-distance">
+                                <div class="subheading-1 text-lightblue">AVG. DISTANCE</div>
+                                <div class="subheading-2 text-white">628 MIL. km</div>
+                            </div>
+                            <div class="values-time">
+                                <div class="subheading-1 text-lightblue">Est. travel time</div>
+                                <div class="subheading-2 text-white">3 years</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab4" class="tabs" style="display:none">
+                        <h2 class="h2 text-white">TITAN</h2>
+                        <p class="text text-lightblue planet-text">
+                            The only moon known to have a dense atmosphere other than Earth, Titan is a home away from
+                            home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings
+                            of Saturn.
+                        </p>
+                        <div class="destination__line"></div>
+                        <div class="destination-values">
+                            <div class="values-distance">
+                                <div class="subheading-1 text-lightblue">AVG. DISTANCE</div>
+                                <div class="subheading-2 text-white">1.6 BIL. km</div>
+                            </div>
+                            <div class="values-time">
+                                <div class="subheading-1 text-lightblue">Est. travel time</div>
+                                <div class="subheading-2 text-white">7 years</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/tabs.js"></script>
+</body>
+
+</html>

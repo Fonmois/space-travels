@@ -1,0 +1,185 @@
+// Здесь необходимо расположить базовые стили. Например для тегов: html, body, h1, h2, button и т.д.
+// Служебные стили (напр. ".hidden") так же должны располагаться здесь, чтобы не создавать кашу с остальными стилями.
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    outline: none;
+    appearance: none;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &:hover {
+        outline: none;
+    }
+}
+
+html,
+body {
+    // font-family: $text-font-family;
+    // font-weight: 400;
+    // font-size: $base-font-size;
+    // line-height: 140%;
+    // background-color: $white;
+    // color: $black;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+html {
+    height: 100%;
+
+    &.prevent-scroll {
+        overflow: hidden;
+    }
+}
+
+body {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &.prevent-scroll {
+        overflow: hidden;
+    }
+}
+
+main {
+    flex-grow: 1;
+}
+
+ul,
+ol,
+blockquote,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    // color: $white;
+    // @include css_anim();
+}
+
+// .hidden {
+//     display: none !important;
+// }
+
+// .visually-hidden {
+//     position: absolute;
+//     width: 1px;
+//     height: 1px;
+//     margin: -1px;
+//     border: 0;
+//     padding: 0;
+//     white-space: nowrap;
+//     clip-path: inset(100%);
+//     clip: rect(0 0 0 0);
+//     overflow: hidden;
+//     pointer-events: none;
+// }
+
+// .hidden-mobile {
+//     @media (max-width: 767px) {
+//         display: none !important;
+//     }
+// }
+
+// .hidden-tablet {
+//     @media (max-width: 1079px) {
+//         display: none !important;
+//     }
+// }
+
+// .hidden-desktop {
+//     @media (max-width: 1439px) {
+//         display: none !important;
+//     }
+// }
+
+// .hidden-md {
+//     @media (min-width: $md) {
+//         display: none !important;
+//     }
+// }
+
+// .show-md {
+//     @media (max-width: $md - 1) {
+//         display: none !important;
+//     }
+// }
+
+// .hidden-lg {
+//     @media (min-width: $lg) {
+//         display: none !important;
+//     }
+// }
+
+// .hidden-xl {
+//     @media (min-width: $xl) {
+//         display: none !important;
+//     }
+// }
+
+// .visible-desktop {
+//     @media (min-width: 1440px) {
+//         display: inline-block !important;
+//     }
+// }
+
+// .visible-up-md {
+//     @media (min-width: $md) {
+//         display: block !important;
+//     }
+// }
+
+// .visible-up-lg {
+//     @media (min-width: $lg) {
+//         display: block !important;
+//     }
+// }
+
+// .visible-up-xl {
+//     @media (min-width: $xl) {
+//         display: block !important;
+//     }
+// }
+
+// .opacity {
+//     opacity: 0;
+// }
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.section {
+    padding: 56px 0;
+    // @media (min-width: $lg) {
+    //     padding: 88px 0;
+    // }
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+
+    @media (min-width: $md) {
+        padding: 0 40px;
+    }
+
+    @media (min-width: $lg) {
+        padding: 0 40px;
+    }
+
+    @media (min-width: $xl) {
+        padding: 0 165px;
+        max-width: $container-max-width;
+        margin: 0 auto;
+    }
+}

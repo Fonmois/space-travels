@@ -1,0 +1,165 @@
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+.subheading-1 {
+
+    font-family: $ff-serif-bellefair;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: default;  
+      line-height: 32.09px;
+}
+h1,
+.h1 {
+    font-size: 80px;
+    line-height: 100px;
+    @media (min-width: $md) {
+        font-size: 150px;
+        line-height: 150px;
+    }
+    @media (min-width: $lg) {
+        font-size: 150px;
+        line-height: 171.9px;
+        }
+}
+h2,
+.h2 {
+    font-size: 56px;
+    line-height: 64.16px;
+    @media(min-width: $md) {
+        font-size: 80px;
+        line-height: 91.68px;
+    }
+    @media(min-width: $lg) {
+        font-size: 100px;
+        line-height: 114.6px;
+        }
+}
+h3,
+.h3 {
+    font-size: 24px;
+    line-height: 27.5px;
+    @media(min-width: $md) {
+        font-size: 40px;
+        line-height: 45.84px;
+    }
+    @media(min-width: $lg) {
+        font-size: 56px;
+        line-height: 64.18px;
+        }
+}
+h4,
+.h4 {
+    font-size: 16px;
+    line-height: 18.34px;
+    opacity: 0.5;
+    @media (min-width: $md) {
+        font-size: 24px;
+        line-height: 27.5px;
+    }
+    @media (min-width: $lg) {
+        font-size: 32px;
+        line-height: 36.37px;
+        }
+}
+h5,
+.h5 {
+    font-family: $ff-sans-cond;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 0;
+    cursor: default;
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 2.7px;
+    text-align: center;
+    
+    // отступ заголовка от nav
+    padding-top: 30px;
+        span {
+            margin-right: 18px;
+            font-weight: 700;
+            opacity: 0.25;
+        }
+
+    @media (min-width: $md) {        
+        text-align: left;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.38px;
+        padding-top: 40px;
+        span {
+            margin-right: 19px;
+        }
+    }
+    @media (min-width: $lg) {
+        font-size: 28px;
+        line-height: 33.6px;
+        letter-spacing: 4.72px;
+        padding-top: 70px;
+            span {
+                margin-right: 24px;
+            }        
+        }
+}
+.subheading-1 {
+    font-size: 14px;
+    line-height: 16.8px;
+    font-family: $ff-sans-cond;
+    letter-spacing: 2.36px;
+}
+.subheading-2 {   
+    font-family: $ff-serif-bellefair;
+    font-size: 28px;
+    line-height: 32.09px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+}
+.nav-text {
+    font-family: $ff-sans-cond;
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: 2.36px;
+    @media (min-width: $md) {
+        font-size: 16px;
+        line-height: 19.2px;
+        letter-spacing: 2.7px;
+    }
+}
+.text-white {
+    color: $white;
+}
+.text-lightblue {   
+    color: $lightblue;
+}
+
+p,
+.text {
+    font-family: $ff-sans-normal;
+    font-weight: 400;
+    margin-top: 0;
+    cursor: default;
+    font-size: 15px;
+    line-height: 25px;
+    @media (min-width: $md) {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    @media (min-width: $lg) {
+        font-size: 18px;
+        line-height: 32px;
+        }
+}
+
+
+// $ff-sans-cond: 'Barlow Condensed', sans-serif;
+// $ff-sans-normal: 'Barlow', sans-serif;
+// $ff-serif-bellefair: 'Bellefair', serif;
+//     @include media($lg)... { }

@@ -1,0 +1,266 @@
+/* general */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+@media (min-width: 1080px) {
+    .flex {
+        padding-top: 50px;
+    }
+}
+
+.line-header {
+    display: none;
+    align-self: center;
+    border-bottom: 1px solid #fff;
+    opacity: 0.25;
+    margin-right: -45px;
+    width: 100%;
+    z-index: 8;
+    mix-blend-mode: normal;
+}
+
+@media (min-width: 1080px) {
+    .line-header {
+        display: block;
+    }
+}
+
+.logo-header {
+    padding-top: 85px;
+    padding-left: 39px;
+    flex-shrink: 0;
+    z-index: 9;
+    padding-right: 50px;
+    background-image: url('../../img/Logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+}
+
+@media (min-width: 35em) {
+    .logo-header {
+        padding-top: 24px;
+        background-size: 48px;
+    }
+}
+
+@media (min-width: 90em) {
+    .logo-header {
+        padding-right: 109px;
+    }
+}
+
+.primary-header {
+
+    justify-content: space-between;
+}
+
+@media (min-width: 1440px) {
+    .primary-header {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+    }
+
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.primary-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: hsl(0 0% 0% / 0.5);
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+    .primary-navigation {
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+    }
+}
+
+.primary-navigation a {
+    text-decoration: none;
+}
+
+.primary-navigation a>[aria-hidden="true"] {
+    font-weight: 700;
+    margin-inline-end: 0.75em;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Мобильная навигация */
+@media (max-width: 35em) {
+    .primary-navigation {
+        --gap: 2em;
+
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 30%;
+
+        flex-direction: column;
+        padding: min(30vh, 10rem)2em;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    /* Кнопка меню */
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background-color: transparent;
+        background: url(../../img/menu.svg);
+        /* background: red; */
+        background-repeat: no-repeat;
+        border: 0;
+        width: 2rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url("../../img/close.svg")
+    }
+}
+
+@media (min-width:35em) and (max-width: 55em) {
+    .primary-navigation a>span[aria-hidden] {
+        display: none;
+    }
+}
+
+/* Основная навигация */
+@media (min-width: 35em) {
+    .primary-navigation {
+        --gap: clamp(1.5rem, 5vw, 3rem);
+        padding-block: 2rem;
+        padding-inline: clamp(3rem, 8vw, 10rem);
+    }
+}
+
+.active {
+    text-decoration: none;
+    position: relative;
+    line-height: 0;
+}
+
+.active:after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    bottom: -32px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    /* optional animation */
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+/* optional hover classes used with anmiation */
+.active:hover:after {
+    width: 100%;
+
+    /* background: orange; */
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+@media (max-width: 35em) {
+    .active::after {
+        display: none;
+        /* transform: rotate(90deg); */
+        /* left: 100%; */
+        /* -o-transition:0;
+        -ms-transition:0;
+        -moz-transition:0;
+        -webkit-transition:0;
+        transition:0; */
+        /* left: 100%;
+                right: 100vw;
+                top: 100%;
+                bottom: 100%; */
+        /* margin: 0 0; */
+
+    }
+
+    .active::before {
+        position: absolute;
+        content: '';
+        border-right: 4px solid #fff;
+        right: 0;
+        top: -9px;
+        height: 31px;
+        margin-right: -32px;
+    }
+
+    #primary-navigation>li.active>a::before {
+        border-right: 0px;
+    }
+
+    a.uppercase.text-white.nav-text.active::after {
+        display: none;
+    }
+
+}
+
+.hover {
+    // text-decoration: none;
+    position: relative;
+    line-height: 0;
+    display: block;    
+
+}
+
+.hover:after {
+    display: none;
+    position: absolute;
+    content: '';
+    height: 3px;
+    bottom: -32px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: $white;
+}
+
+.hover:hover::after {
+    display: block;
+    width: 100%;
+    content: '';
+    height: 3px;
+    bottom: -32px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: $white;
+    mix-blend-mode: normal;
+    opacity: 0.25;  
+
+    @media (min-width: 15em) and (max-width: 35em) {
+        display:none
+    }
+
+}

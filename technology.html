@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Document</title>
+    <script src="./js/nav.js" defer></script>
+</head>
+
+<body id="technology">
+    <div class="contaier">
+        <header class="primary-header flex">
+
+            <div class="logo-header">
+            </div>
+            <div class="line-header"></div>
+
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span
+                    class="sr-only"></span>
+            </button>
+
+            <nav>
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                    <li class="hover">
+                        <a class="ff-sans-cond uppercase text-white nav-text" href="index.html">
+                            <span aria-hidden="true">00</span>Home
+                        </a>
+                    <li class="hover">
+                        <a class="ff-sans-cond uppercase text-white nav-text" href="destination.html">
+                            <span aria-hidden="true">01</span>Destination
+                        </a>
+                    <li class="hover">
+                        <a class="ff-sans-cond uppercase text-white nav-text" href="crew.html">
+                            <span aria-hidden="true">02</span>Crew
+                        </a>
+                    <li class="active">
+                        <a class="ff-sans-cond uppercase text-white nav-text" href="technology.html">
+                            <span aria-hidden="true">03</span>Technology
+                        </a>
+                </ul>
+            </nav>
+    </div>
+    </header>
+    <main>
+        <div class="container">
+            <h5 class="h5 text-white technology-title"><span>03</span>SPACE LAUNCH 101</h5>
+            <div class="technology">
+                <div id="venhicle" class="technology-img venhicle image" ></div>
+                <div id="spaceport" class="technology-img spaceport image" style="display:none"></div>
+                <div id="capsule" class="technology-img capsule image" style="display:none"></div>
+                <div class="technology-block">
+                    <ul class="technology-navigation">
+                        <li class="tech-nav">
+                            <a class="tech-btn tech__active" 
+                            onclick="openImage('venhicle'),openTab('tab1')" href="#" autofocus="autofocus"><span>1</span></a>
+                        <li class="tech-nav">
+                            <a class="tech-btn tech__active"
+                            onclick="openImage('spaceport'),openTab('tab2')" href="#"><span>2</span></a>
+                        <li class="tech-nav">
+                            <a class="tech-btn tech__active"
+                            onclick="openImage('capsule'),openTab('tab3')" href="#"><span>3</span></a>
+                    </ul>
+                    <div id="tab1" class="technology-info tabs">
+                        <div class="nav-text text-lightblue">THE TERMINOLOGY…</div>
+                        <h3 class="h3 text-white">LAUNCH VEHICLE</h3>
+                        <p class="text text-lightblue technology-text">A launch vehicle or carrier rocket is a
+                            rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to
+                            Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing
+                            150 metres tall, it's quite an awe&nbsp;-&nbsp;inspiring sight on the launch pad!</p>
+                    </div>
+                    <div id="tab2" class="technology-info tabs" style="display: none">
+                        <div class="nav-text text-lightblue">THE TERMINOLOGY…</div>
+                        <h3 class="h3 text-white">SPACEPORT</h3>
+                        <p class="text text-lightblue technology-text">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</p>
+                    </div>
+                    <div id="tab3" class="technology-info tabs" style="display: none">
+                        <div class="nav-text text-lightblue">THE TERMINOLOGY…</div>
+                        <h3 class="h3 text-white">SPACE CAPSULE</h3>
+                        <p class="text text-lightblue technology-text">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/tabs.js"></script>
+</body>
+
+</html>

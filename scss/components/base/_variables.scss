@@ -1,0 +1,58 @@
+// Точки медиа запросов
+$sm: 375px;
+$md: 768px;
+$lg: 1080px;
+$xl: 1440px;
+$breakpoints: (
+    "sm": $sm,
+    "md": $md,
+    "lg": $lg,
+    "xl": $xl,
+) !default;
+
+// Цвета
+
+$white: #FFFFFF;
+// $black: #000000;
+// $dark: #2D2D2D;
+// $gray: #808080;
+// $light:#D9D9D9;
+// $light-gray: #DFDFDF;
+// $light-gray2: #B3B3B3;
+// $cianyde: #7AE000;
+// $neon-light-green: #A1FF30;
+// $neon-purple: #9747FF;
+// $red: #FD0000;
+$space: #0B0D17;
+$lightblue: #D0D6F9;
+
+// С прозрачностью
+// $black-60: transparentize($black, .4);
+// $black-10: transparentize($black, .9);
+// $black-15: transparentize($black, .85);
+// $white-60: transparentize($white, .4);
+// $white-40: transparentize($white, .6);
+// $white-30: transparentize($white, .7);
+
+// Градиенты
+$card-dark-gradient: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+$header-dark-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+// $white-gradient: linear-gradient(90deg, rgba(255, 255, 255, 0.68) 72.27%, rgba(255, 255, 255, 0) 100%);
+$deep-ocean-gradient: linear-gradient(105.92deg, #004CE0 0%, #20063F 62.64%);
+$sunflower-gradient: linear-gradient(103.04deg, #E44C73 0%, #9739B7 49.76%, #311353 100%);
+$cianyde-black-gradient: linear-gradient(260.83deg, #7AE000 25.88%, rgba(122, 224, 0, 0) 71.99%);
+
+// Пути
+$font-path: '/fonts/';
+$img-path: "/images/";
+
+//Шрифты
+$ff-sans-cond: 'Barlow Condensed', sans-serif;
+$ff-sans-normal: 'Barlow', sans-serif;
+$ff-serif-bellefair: 'Bellefair', serif;
+// font-family: 'Barlow Condensed', sans-serif;
+// font-family: 'Barlow', sans-serif;
+// font-family: 'Bellefair', serif;
+
+// Размер контейнера
+$container-max-width: 1440px;

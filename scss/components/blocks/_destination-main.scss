@@ -1,0 +1,287 @@
+// @import '../../css/base/variables';
+
+/* Временный bg */
+#destination {
+    background-image: url(../../img/mobile/background/Mobile-Destination.png);
+    // background-size: cover;
+}
+
+/* body смена фона */
+@media (min-width:35em) and (max-width: 64em) {
+    #destination {
+        background-image: url(../../img/tablet/background/Tablet-Destination.png);
+    }
+}
+
+@media (min-width:64em) {
+    #destination {
+        background-image: url(../../img/desktop/background/Desktop-Destination.png);
+    }
+}
+
+.dest__h5 {
+    margin-bottom: 32px;
+
+    @media (min-width: $md) {
+        margin-bottom: 57px;
+    }
+
+    @media (min-width: $lg) {
+        margin-bottom: 97px;
+    }
+}
+
+.destination {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    // max-width: 445px;   
+    // row-gap: 81px;
+    @media (min-width: $lg) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+// размеры небесных тел
+
+.planet {
+        background-repeat: no-repeat;
+        width: 170px;
+        height: 170px;
+        margin-bottom: 26px;
+}
+
+@media (min-width: $md) {
+    .planet {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 56px;
+    }
+}
+
+@media (min-width: $lg) {
+    .planet {
+        width: 445px;
+        height: 445px;
+        align-self: flex-start;
+        max-width: 445px;
+        margin-bottom: 0px;
+    }
+}
+
+.moon {
+    background-image: url("../img/mobile/planets/mobile-moon.png");
+}
+@media (min-width: $md) {
+    .moon {
+        background-image: url("../img/tablet/planets/tablet-moon.png");
+    }
+}
+@media (min-width: $lg) {
+    .moon {
+        background-image: url("../img/desktop/planets/desktop-moon.png");
+    }
+}
+
+.mars {
+    background-image: url("../img/mobile/planets/mobile-mars.png");
+}
+@media (min-width: $md) {
+    .mars {
+        background-image: url("../img/tablet/planets/tablet-mars.png");
+    }
+}
+@media (min-width: $lg) {
+    .mars {
+        background-image: url("../img/desktop/planets/desktop-mars.png");
+    }
+}
+
+.europa {
+    background-image: url("../img/mobile/planets/mobile-europa.png");
+}
+@media (min-width: $md) {
+    .europa {
+        background-image: url("../img/tablet/planets/tablet-europa.png");
+    }
+}
+@media (min-width: $lg) {
+    .europa {
+        background-image: url("../img/desktop/planets/desktop-europa.png");
+    }
+}
+
+.titan {
+    background-image: url("../img/mobile/planets/mobile-titan.png");
+}
+@media (min-width: $md) {
+    .titan {
+        background-image: url("../img/tablet/planets/tablet-titan.png");
+    }
+}
+@media (min-width: $lg) {
+    .titan {
+        background-image: url("../img/desktop/planets/desktop-titan.png");
+    }
+}
+
+.destination-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    column-gap: 26px;
+    
+    margin-bottom: 20px;
+
+    @media (min-width: $md) {
+        margin-bottom: 32px;
+    }
+
+    @media (min-width: $lg) {
+        margin-top: -17px;
+        max-width: 445px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 37px;
+    }
+}
+
+.dest__underline:hover, 
+.dest__underline.is-active {
+    padding-bottom: 12px;
+    border-bottom: 4px solid rgb(255, 255, 255, 0.25);
+    color: #fff;    
+    /* transition: 0.3s ease-in-out; */
+}
+
+.dest__underline:active, .dest__underline:focus {
+    border-bottom: 4px solid rgb(255, 255, 255, 1);
+    color: #fff;
+    padding-bottom: 12px;
+}
+
+h2.h2.text-white {
+    margin-bottom: 1px;
+    text-align: center;
+    @media (min-width: $md) {
+        margin-bottom: 8px;
+    }
+
+    @media (min-width: $lg) {
+        margin-bottom: 14px;
+        text-align: left;
+    }
+}
+
+.planet-text {
+    max-width: 327px;
+    text-align: center;
+    margin-bottom: 32px;
+
+    @media (min-width: $md) {
+        max-width: 573px;
+        margin-bottom: 49px;
+    }
+
+    @media (min-width: $lg) {
+        max-width: 444px;
+        text-align: left;
+        margin-bottom: 54px;
+    }
+}
+
+.destination__line {
+    align-self: left;
+    border-bottom: 1px solid #fff;
+    opacity: 0.25;
+    // margin-right: -45px;
+    width: 100%;
+    z-index: 8;
+    mix-blend-mode: normal;
+    margin-bottom: 32px;
+
+    @media (min-width: $md) {
+        margin-bottom: 28px;
+    }
+}
+
+.destination-values {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    @media (min-width: $md) {
+        column-gap: 79px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    @media (min-width: $lg) {
+        text-align: left;
+    }
+}
+
+.destination-info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 444px;
+
+    @media (min-width: $lg) {
+        max-width: 444px;
+        align-items: flex-start;
+    }
+}
+
+.subheading-1.text-lightblue,
+.subheading-2.text-lightblue {
+    margin-bottom: 12px;
+}
+
+.subheading-2.text-white {
+    margin-bottom: 32px;
+
+    @media (min-width: $md) {
+        margin-bottom: 0px;
+    }
+}
+
+// .destination-active {
+//     text-decoration: none;
+//     position: relative;
+//     line-height: 0;
+// }
+
+// .destination-active:after {
+//     position: absolute;
+//     content: '';
+//     height: 3px;
+//     bottom: -12px;
+//     margin: 0 auto;
+//     left: 0;
+//     right: 0;
+//     width: 100%;
+//     background: #fff;
+//     /* optional animation */
+//     -o-transition: .5s;
+//     -ms-transition: .5s;
+//     -moz-transition: .5s;
+//     -webkit-transition: .5s;
+//     transition: .5s;
+// }
+
+
+
+// .tab-line {
+//     position: absolute;
+//     top: 0;
+//     left: 17px;
+//     width: 90px;
+//     height: 5px;
+//     background-color: blue;
+//     border-radius: 10px;
+//     transition: all .3s ease-in-out;
+// }
